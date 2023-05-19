@@ -32,6 +32,7 @@ class editprofileScreen extends StatelessWidget {
                   Align(
                     alignment: Alignment.centerLeft,
                     child: IconButton(
+
                       icon: const Icon(
                         Icons.arrow_back_ios,
                         color: Color(0xff212435),
