@@ -195,9 +195,9 @@ class notifScreen extends StatelessWidget {
                     ),
                   ),
                   Divider(
-                    color: Color(0xff808080),
+                    color: Color(0xff000000),
                     height: 15,
-                    thickness: 0,
+                    thickness: 1,
                     indent: 0,
                     endIndent: 0,
                   ),
@@ -285,9 +285,9 @@ class notifScreen extends StatelessWidget {
                     },
                   ),
                   Divider(
-                    color: Color(0xff808080),
+                    color: Color(0xff000000),
                     height: 16,
-                    thickness: 0,
+                    thickness: 1,
                     indent: 0,
                     endIndent: 0,
                   ),

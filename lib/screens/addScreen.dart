@@ -36,7 +36,7 @@ class addScreen extends StatelessWidget {
                       child: IconButton(
                         icon: const Icon(
                           Icons.arrow_back_ios,
-                          color: Color(0xff212435),
+                          color: Color(0xff000000),
                           size: 24,
                         ),
                         onPressed: () {

@@ -232,7 +232,7 @@ class dashboardScreen extends StatelessWidget {
                               width: MediaQuery.of(context).size.width * 0.8,
                               height: 200,
                               decoration: BoxDecoration(
-                                color: Color(0x00ffffff),
+                                color: Color(0xffffffff),
                                 shape: BoxShape.rectangle,
                                 borderRadius: BorderRadius.circular(10.0),
                                 border: Border.all(
@@ -247,17 +247,16 @@ class dashboardScreen extends StatelessWidget {
                                     margin: EdgeInsets.all(0),
                                     padding: EdgeInsets.all(0),
                                     width: MediaQuery.of(context).size.width,
-                                    height: 128,
+                                    height: 127,
                                     decoration: BoxDecoration(
                                       color: Color(0xffdadada),
                                       shape: BoxShape.rectangle,
                                       borderRadius: BorderRadius.circular(10.0),
                                     ),
                                     child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
+                                      mainAxisAlignment: MainAxisAlignment.center,
                                       crossAxisAlignment:
-                                          CrossAxisAlignment.center,
+                                      CrossAxisAlignment.center,
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Text(
@@ -291,7 +290,7 @@ class dashboardScreen extends StatelessWidget {
                                     width: MediaQuery.of(context).size.width,
                                     height: 70,
                                     decoration: BoxDecoration(
-                                      color: Color(0xffffffff),
+                                      color: Color(0x00ffffff),
                                       shape: BoxShape.rectangle,
                                       borderRadius: BorderRadius.only(
                                           bottomLeft: Radius.circular(10.0),
@@ -302,9 +301,9 @@ class dashboardScreen extends StatelessWidget {
                                           vertical: 0, horizontal: 10),
                                       child: Row(
                                         mainAxisAlignment:
-                                            MainAxisAlignment.start,
+                                        MainAxisAlignment.start,
                                         crossAxisAlignment:
-                                            CrossAxisAlignment.center,
+                                        CrossAxisAlignment.center,
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Container(
@@ -316,7 +315,7 @@ class dashboardScreen extends StatelessWidget {
                                               color: Color(0xffffffff),
                                               shape: BoxShape.rectangle,
                                               borderRadius:
-                                                  BorderRadius.circular(100.0),
+                                              BorderRadius.circular(100.0),
                                               border: Border.all(
                                                   color: Color(0xff000000),
                                                   width: 1),
@@ -338,13 +337,13 @@ class dashboardScreen extends StatelessWidget {
                                             ),
                                           ),
                                           Padding(
-                                            padding: EdgeInsets.fromLTRB(
-                                                10, 0, 0, 0),
+                                            padding:
+                                            EdgeInsets.fromLTRB(10, 0, 0, 0),
                                             child: Column(
                                               mainAxisAlignment:
-                                                  MainAxisAlignment.center,
+                                              MainAxisAlignment.center,
                                               crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
+                                              CrossAxisAlignment.start,
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(

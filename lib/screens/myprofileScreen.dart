@@ -14,50 +14,47 @@ class myprofileScreen extends StatelessWidget {
         mainAxisSize: MainAxisSize.max,
         children: [
           Container(
-            margin: EdgeInsets.fromLTRB(0, 50, 0, 0),
-            padding: EdgeInsets.zero,
+            alignment: Alignment.center,
+            margin: EdgeInsets.all(0),
+            padding: EdgeInsets.all(0),
             width: MediaQuery.of(context).size.width,
-            height: 60,
+            height: 100,
             decoration: BoxDecoration(
-              color: Color(0x00000000),
               shape: BoxShape.rectangle,
               borderRadius: BorderRadius.zero,
             ),
-            child: Padding(
-              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: IconButton(
-                      icon: const Icon(
-                        Icons.arrow_back_ios,
-                        color: Color(0xff212435),
-                        size: 24,
-                      ),
-                      onPressed: () {
-                        Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => profileScreen(),
-                        ));
-                      },
-                    ),
-                  ),
-                  Text(
-                    "USER_NAME",
-                    textAlign: TextAlign.center,
-                    overflow: TextOverflow.clip,
-                    style: TextStyle(
-                      fontWeight: FontWeight.w700,
-                      fontStyle: FontStyle.normal,
-                      fontSize: 10,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: IconButton(
+                    icon: const Icon(
+                      Icons.arrow_back_ios,
                       color: Color(0xff000000),
+                      size: 25,
                     ),
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => profileScreen(),
+                      ));
+                    },
                   ),
-                ],
-              ),
+                ),
+                Text(
+                  "My Profile",
+                  textAlign: TextAlign.start,
+                  overflow: TextOverflow.clip,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w500,
+                    fontStyle: FontStyle.normal,
+                    fontSize: 14,
+                    color: Color(0xff000000),
+                  ),
+                ),
+              ],
             ),
           ),
           Padding(

@@ -8,35 +8,34 @@ class messageScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xff3e9a71),
       body: Padding(
-        padding: EdgeInsets.fromLTRB(0, 80, 0, 20),
+        padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
         child: SingleChildScrollView(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.max,
             children: [
               Container(
-                alignment: Alignment.centerLeft,
+                alignment: Alignment.center,
                 margin: EdgeInsets.all(0),
                 padding: EdgeInsets.all(0),
-                width: MediaQuery.of(context).size.width * 0.6,
-                height: 30,
+                width: MediaQuery.of(context).size.width,
+                height: 100,
                 decoration: BoxDecoration(
-                  color: Color(0x00000000),
                   shape: BoxShape.rectangle,
                   borderRadius: BorderRadius.zero,
                 ),
-                child: Padding(
-                  padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      IconButton(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: IconButton(
                         icon: const Icon(
                           Icons.arrow_back_ios,
-                          color: Color(0xff212435),
+                          color: Color(0xff000000),
                           size: 25,
                         ),
                         onPressed: () {
@@ -45,24 +44,24 @@ class messageScreen extends StatelessWidget {
                           ));
                         },
                       ),
-                      Text(
-                        "USERNAME",
-                        textAlign: TextAlign.start,
-                        overflow: TextOverflow.clip,
-                        style: TextStyle(
-                          fontWeight: FontWeight.w700,
-                          fontStyle: FontStyle.normal,
-                          fontSize: 15,
-                          color: Color(0xff000000),
-                        ),
+                    ),
+                    Text(
+                      "My Profile",
+                      textAlign: TextAlign.start,
+                      overflow: TextOverflow.clip,
+                      style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontStyle: FontStyle.normal,
+                        fontSize: 14,
+                        color: Color(0xff000000),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
               Divider(
                 color: Color(0xff000000),
-                height: 20,
+                height: 15,
                 thickness: 1,
                 indent: 0,
                 endIndent: 0,
@@ -124,7 +123,7 @@ class messageScreen extends StatelessWidget {
                                 width: MediaQuery.of(context).size.width *
                                     0.7000000000000001,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1f000000),
+                                  color: Color(0xffffffff),
                                   shape: BoxShape.rectangle,
                                   borderRadius: BorderRadius.only(
                                       topRight: Radius.circular(10.0),
@@ -155,7 +154,7 @@ class messageScreen extends StatelessWidget {
                                 width: MediaQuery.of(context).size.width *
                                     0.7000000000000001,
                                 decoration: BoxDecoration(
-                                  color: Color(0x1f000000),
+                                  color: Color(0xffffffff),
                                   shape: BoxShape.rectangle,
                                   borderRadius: BorderRadius.only(
                                       topRight: Radius.circular(10.0),
