@@ -1,10 +1,9 @@
-import 'package:appointment_scheduler_system/screens/profileScreen.dart';
-import 'package:appointment_scheduler_system/screens/viewScreen.dart';
+import 'package:appointment_scheduler_system/screens/userFeatures/appopintmentScreen/addScreen.dart';
+import 'package:appointment_scheduler_system/screens/userFeatures/notificationScreen/notifScreen.dart';
+import 'package:appointment_scheduler_system/screens/userFeatures/dashboardScreen/dashboardScreen.dart';
+import 'package:appointment_scheduler_system/screens/userFeatures/profileScreen/profileScreen.dart';
+import 'package:appointment_scheduler_system/screens/userFeatures/searchScreen/viewScreen.dart';
 import 'package:flutter/material.dart';
-
-import 'addScreen.dart';
-import 'dashboardScreen.dart';
-import 'notifScreen.dart';
 
 class searchScreen extends StatelessWidget {
   @override

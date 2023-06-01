@@ -1,7 +1,6 @@
-import 'package:appointment_scheduler_system/screens/profileScreen.dart';
+import 'package:appointment_scheduler_system/screens/userFeatures/profileScreen/editprofileScreen.dart';
+import 'package:appointment_scheduler_system/screens/userFeatures/profileScreen/profileScreen.dart';
 import 'package:flutter/material.dart';
-
-import 'editprofileScreen.dart';
 
 class myprofileScreen extends StatelessWidget {
   @override

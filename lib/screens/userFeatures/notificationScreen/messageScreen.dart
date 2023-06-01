@@ -1,6 +1,5 @@
+import 'package:appointment_scheduler_system/screens/userFeatures/notificationScreen/notifScreen.dart';
 import 'package:flutter/material.dart';
-
-import 'notifScreen.dart';
 
 class messageScreen extends StatelessWidget {
   @override

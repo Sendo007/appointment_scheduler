@@ -1,5 +1,5 @@
-import 'package:appointment_scheduler_system/screens/loginScreen.dart';
-import 'package:appointment_scheduler_system/screens/registerScreen1.dart';
+import 'package:appointment_scheduler_system/screens/welcomeScreen/loginScreen/loginScreen.dart';
+import 'package:appointment_scheduler_system/screens/welcomeScreen/registerScreen/registerScreen1.dart';
 import 'package:flutter/material.dart';
 
 class welcomeScreen extends StatelessWidget {

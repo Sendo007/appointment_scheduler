@@ -1,4 +1,4 @@
-import 'package:appointment_scheduler_system/screens/dashboardScreen.dart';
+import 'package:appointment_scheduler_system/screens/userFeatures/dashboardScreen/dashboardScreen.dart';
 import 'package:flutter/material.dart';
 
 class viewScreen extends StatelessWidget {
@@ -210,29 +210,42 @@ class viewScreen extends StatelessWidget {
           Container(
             alignment: Alignment.centerRight,
             margin: EdgeInsets.fromLTRB(0, 20, 0, 0),
-            padding: EdgeInsets.all(0),
-            width: MediaQuery.of(context).size.width,
             height: 50,
-            decoration: BoxDecoration(
-              color: Color(0x00000000),
-              shape: BoxShape.rectangle,
-              borderRadius: BorderRadius.zero,
-            ),
-            child: Container(
-              margin: EdgeInsets.all(0),
-              padding: EdgeInsets.all(0),
-              width: 100,
-              height: 100,
-              decoration: BoxDecoration(
-                color: Color(0xffff0000),
-                shape: BoxShape.circle,
-                border: Border.all(color: Color(0x4d9e9e9e), width: 1),
-              ),
-              child: Icon(
-                Icons.delete,
-                color: Color(0xffffffff),
-                size: 25,
-              ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Container(
+                  width: 70,
+                  height: 70,
+                  decoration: BoxDecoration(
+                    color: Color(0xff09ff00),
+                    shape: BoxShape.circle,
+                    border: Border.all(color: Color(0x4d9e9e9e), width: 1),
+                  ),
+                  child: Icon(
+                    Icons.edit,
+                    color: Color(0xffffffff),
+                    size: 25,
+                  ),
+                ),
+                Container(
+                  width: 70,
+                  height: 70,
+                  decoration: BoxDecoration(
+                    color: Color(0xffff0000),
+                    shape: BoxShape.circle,
+                    border: Border.all(color: Color(0x4d9e9e9e), width: 1),
+                  ),
+                  child: Icon(
+                    Icons.delete,
+                    color: Color(0xffffffff),
+                    size: 25,
+                  ),
+                ),
+
+              ],
             ),
           ),
         ],

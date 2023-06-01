@@ -1,4 +1,4 @@
-import 'package:appointment_scheduler_system/screens/profileScreen.dart';
+import 'package:appointment_scheduler_system/screens/userFeatures/profileScreen/profileScreen.dart';
 import 'package:flutter/material.dart';
 
 class appointmentScreen extends StatelessWidget {
